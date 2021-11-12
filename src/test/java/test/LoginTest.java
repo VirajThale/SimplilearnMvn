@@ -21,10 +21,6 @@ public class LoginTest extends Baseclass
 
 
 {
-	
-	
-	
-
 	@Parameters({"Username","Password"})
 	@Test(enabled=true)
 	public void NegativeLogin(String UsernameVal, String PasswordVal) 
