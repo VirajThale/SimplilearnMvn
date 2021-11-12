@@ -1,7 +1,6 @@
 package test;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -48,7 +47,6 @@ public class Baseclass
 		setDriver();
 	   
 		dr.get("https://www.simplilearn.com/");
-		
 		dr.manage().window().maximize();
 		dr.manage().timeouts().implicitlyWait(4000, TimeUnit.MILLISECONDS);
 		

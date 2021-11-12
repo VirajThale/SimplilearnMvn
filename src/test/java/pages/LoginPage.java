@@ -65,7 +65,7 @@ public class LoginPage
 			
 			WebElement error= dr.findElement(By.id("msg_box"));
 			String Actualmsg= error.getText();
-			String Expmsg ="The email or password you have entered is invalid.";
+			String Expmsg ="The email or password you have entered is invalid.as";
 			
 			//Assert.assertEquals(Actualmsg, Expmsg); //only can use in @Test
 			

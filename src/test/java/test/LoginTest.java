@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 //import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -29,7 +30,9 @@ public class LoginTest extends Baseclass
 		test= report.startTest("Negative Login Test");
 		LoginPage login = new LoginPage();
 		login.Login(UsernameVal, PasswordVal);
+		login.ErrorCheck();
 		report.endTest(test);
+		Assert.assertTrue(false);
 		
 		
 	}
